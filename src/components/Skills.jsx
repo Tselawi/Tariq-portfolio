@@ -4,7 +4,11 @@ import Person from "../assets/PersonalData";
 const Skills = () => {
   return (
     <div>
-      <img src={Person.about.skillbg} alt="image" className="image-skill" />
+      <img
+        src={Person.about.skillbg}
+        alt="bluebackground"
+        className="image-skill"
+      />
       <div className="container-fluid padding" id="skills">
         <div className="row headers text-center padding">
           <div className="col-md-12">
