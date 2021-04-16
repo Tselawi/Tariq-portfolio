@@ -1,4 +1,9 @@
-//import logo from "./images/tlogo.png";
+import logo from "./images/logo.svg";
+import backg from "./images/a-t.jpg";
+import bg1 from "./images/o-1.jpg";
+import bg2 from "./images/a-c.jpg";
+import profilepic from "./images/profilepic.jpeg";
+import skillbg from "./images/p-1.jpg";
 
 const personData = {
   about: {
@@ -6,8 +11,13 @@ const personData = {
     phone: `+32466346060`,
     email: `selawi.be@gmail.com`,
     address: `4000 Liège ‡(Belgium)`,
-    profession: [`Junior Web Developer`],
+    profession: [`System Administrator`, `Junior Web Developer`],
+    profilepic,
+    skillbg,
     logo,
+    backg,
+    bg1,
+    bg2,
   },
 
   socialMedias: [
@@ -52,38 +62,46 @@ const personData = {
     {
       school: `Alain University of Science & Technology`,
       url: `https://aau.ac.ae/en/`,
-      brief: `I graduated in 2010 holding BSC degree in software engineering from`,
+      brief: `I graduated in 2010 holding bachelor degree in software engineering from`,
     },
     {
       school: ``,
       url: ``,
-      brief: `I am hungry for learning and I would like to discover a lot and work for a reputable company `,
+      brief: `I am thirsty for learning and I would like to discover a lot and work for a reputable company `,
     },
   ],
 
   skills: [
     {
-      name: `frontend`,
-      language: [`HTML5`, `CSS3`, `SASS`, `JavaScript`, `React`, `Bootstrap 4`],
+      name: `Frontend`,
+      language: [
+        `HTML5`,
+        `CSS3`,
+        `SASS`,
+        `JavaScript`,
+        `React`,
+        `React-native`,
+        `Bootstrap 4`,
+      ],
       icon: `fas fa-laptop-code`,
     },
     {
-      name: `backend`,
+      name: `Backend`,
       language: [`Docker`, `Php`],
       icon: `fas fa-code`,
     },
     {
-      name: `database`,
+      name: `Database`,
       language: [`Phpmyadmin`, `MYSQL`],
       icon: `fas fa-database`,
     },
     {
-      name: `version control`,
+      name: `Version control`,
       language: [`Git`, `Github`],
       icon: `fas fa-code-branch`,
     },
     {
-      name: `cloud`,
+      name: `Cloud`,
       language: [`Heroku`, `Netlify`],
       icon: `fas fa-cloud`,
     },
@@ -94,10 +112,10 @@ const personData = {
       title: "Character Manager",
       technologies: ["HTML5", `CSS3`, `Javascript`],
       about: `Create, update, remove  heroes characters`,
-      image: merhatibebAcademy,
+      image: `merhatibebAcademy`,
       url: `https://tselawi.github.io/modern-js-application/`,
     },
   ],
 };
 
-// export default personData;
+export default personData;

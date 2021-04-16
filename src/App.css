@@ -1,18 +1,138 @@
-* {
-  margin: 0;
-  padding: 0;
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&family=Source+Serif+Pro:ital,wght@1,300&display=swap");
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-family: "Roboto Mono", monospace;
+  color: #222;
+  overflow-x: hidden;
+  position: relative;
 }
-/* Header {
-  align-items: center;
-} */
-
-/* .nav-1 {
-  color: aliceblue;
-} */
-
+/* header */
 .navbar-light {
   background-color: rgb(245, 193, 50);
   text-decoration: none;
   font-variant: small-caps;
   font-weight: bold;
+  font-size: 1.5rem;
+}
+.logo-img {
+  height: 40px;
+  width: 50px;
+}
+
+/*Home */
+.contain img {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+.carousel-caption {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.carousel-caption h3 {
+  font-size: 300%;
+}
+.carousel-caption p {
+  padding: 2px 4px;
+  font-size: 250%;
+  font-weight: 500;
+  padding-bottom: 1rem;
+}
+.carousel-caption h3 span {
+  background-color: transparent;
+}
+.btn-outline-light:hover {
+  background-color: white;
+  border: 1px solid white;
+}
+.carousel-caption .dropdown {
+  margin-top: 10rem;
+}
+.fa-arrow-alt-circle-down {
+  font-size: 300%;
+  color: rgb(245, 193, 50);
+}
+.fa-arrow-alt-circle-down:hover {
+  background-color: white;
+  color: white;
+  background-color: transparent;
+}
+
+.carousel-caption li i {
+  font-size: 300%;
+  margin-top: 90%;
+}
+
+.carousel-caption li i:hover {
+  color: rgb(245, 193, 50);
+}
+
+/* About*/
+.headers {
+  width: 75%;
+  margin: 0 auto;
+  padding-top: 2rem;
+}
+.padding {
+  padding-bottom: 2rem;
+}
+.figure-caption {
+  font-size: 2rem;
+}
+.headers hr {
+  border-top: 2px solid #b4b4b4;
+  width: 95%;
+  margin-top: 0.3rem;
+  margin-bottom: 1rem;
+}
+.education:hover {
+  text-decoration: none;
+}
+#about .jumbotron {
+  padding: 1rem;
+  border-radius: 0;
+}
+#about {
+  /* background: repeating-linear-gradient(to left top, rgb(245, 193, 50), white); */
+  background: radial-gradient(rgb(245, 193, 50), white);
+}
+.display-4 {
+  text-transform: uppercase;
+}
+
+/* skills */
+#skills .heading {
+  font-style: 1.9rem;
+  margin-bottom: 1.9rem;
+  text-transform: uppercase;
+}
+.image-skill {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+
+.skill {
+  font-size: 1.5rem;
+}
+.skill h3 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: rgb(245, 193, 50);
+}
+.language {
+  font-size: 1.1rem;
+}
+.skill:hover {
+  color: rgb(245, 193, 50);
+}
+.language:hover {
+  color: rgb(245, 193, 50);
+}
+.skill h3:hover {
+  color: white;
 }

@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "../assets/images/logo.svg";
+import Person from "../assets/PersonalData";
 
 const Header = () => {
   return (
@@ -7,7 +7,11 @@ const Header = () => {
       <nav className="navbar navbar-expand-md navbar-light fixed-top">
         <div className="container-fluid">
           <a className="navbar-brand" href="#home">
-            <img src={logo} alt="Umrella logo" />
+            <img
+              src={Person.about.logo}
+              className="logo-img"
+              alt="Umrella logo"
+            />
           </a>
           {/* start the humburger menu*/}
           <button
