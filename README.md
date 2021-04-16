@@ -1,8 +1,7 @@
 ## Tariq's Portfolio
 
- ## My link for this project
-
-
+ ## My link in netlify
+https://tariqs-portfolio.netlify.app/
 
 ## The tools & langusges
 
