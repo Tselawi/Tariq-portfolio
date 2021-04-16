@@ -4,6 +4,8 @@ import bg1 from "./images/o-1.jpg";
 import bg2 from "./images/a-c.jpg";
 import profilepic from "./images/profilepic.jpeg";
 import skillbg from "./images/p-1.jpg";
+import charatermanager from "./images/charatermanager.png";
+import pizza_form from "./images/pizza-form.png";
 
 const personData = {
   about: {
@@ -112,8 +114,15 @@ const personData = {
       title: "Character Manager",
       technologies: ["HTML5", `CSS3`, `Javascript`],
       about: `Create, update, remove  heroes characters`,
-      image: `merhatibebAcademy`,
+      image: charatermanager,
       url: `https://tselawi.github.io/modern-js-application/`,
+    },
+    {
+      title: "Pizza Form",
+      technologies: ["HTML5, CSS3, Bootstrap, Php, Docker"],
+      about: `Submit-order, Register-address, Switch between links`,
+      image: pizza_form,
+      url: `https://php-form-pizza.herokuapp.com/src/index.php`,
     },
   ],
 };

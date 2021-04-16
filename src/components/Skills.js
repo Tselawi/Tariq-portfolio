@@ -7,7 +7,7 @@ const Skills = () => {
       <img src={Person.about.skillbg} alt="image" className="image-skill" />
       <div className="container-fluid padding" id="skills">
         <div className="row headers text-center padding">
-          <div className="col-12">
+          <div className="col-md-12">
             <h1 className="display-4 text-white">Skills</h1>
           </div>
           <hr />
