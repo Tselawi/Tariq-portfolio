@@ -42,9 +42,9 @@ const Footer = () => {
             <hr className="light-100" />
             <h5 className="footer-media">
               &copy;2021{" "}
-              <a href="" target="_blank" rel="noopener noreferrer">
-                Tariq Selawi
-              </a>
+              {/* <a href="#" target="_blank" rel="noopener noreferrer"> */}
+              Tariq Selawi
+              {/* </a> */}
             </h5>
           </div>
         </div>
