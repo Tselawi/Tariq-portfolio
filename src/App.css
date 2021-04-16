@@ -159,7 +159,7 @@ body {
 .headers-1 {
   width: 75%;
   margin: 0 auto;
-  margin-top: 10%;
+  margin-top: 16.5%;
   padding-top: 2rem;
 }
 .fa-caret-down {
@@ -175,4 +175,9 @@ body {
 .image-link:hover {
   opacity: 0.6;
   background-color: black;
+}
+
+.bg {
+  /* animation: slide 3s ease-in-out infinite alternate; */
+  background-image: linear-gradient(-60deg, rgb(245, 193, 50) 50%, black 50%);
 }

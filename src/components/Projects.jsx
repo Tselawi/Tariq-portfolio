@@ -3,9 +3,10 @@ import Person from "../assets/PersonalData";
 
 const Projects = () => {
   return (
-    <div id="projects" className="container-fluid padding bg-dark text-white">
-      <div className="row headers-1 padding text-center">
-        <div className="col-12">
+    <div id="projects" className="container-fluid padding text-white bg">
+      <div class="bg bg2"></div>
+      <div className="row headers-1 padding text-center bg bg3">
+        <div className="col-12 content">
           <h1 className="display-4">projects</h1>
         </div>
         <hr />
