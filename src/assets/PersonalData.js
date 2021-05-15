@@ -5,7 +5,10 @@ import bg2 from "./images/a-c.jpg";
 import profilepic from "./images/profilepic.jpeg";
 import skillbg from "./images/p-1.jpg";
 import charatermanager from "./images/charatermanager.png";
-import pizza_form from "./images/pizza-form.png";
+import pizza_form from "./images/pizzaform.png";
+import weatherapp from "./images/weatherapp.png";
+import cogip from "./images/cogip.png";
+import pomodoro from "./images/pomodoro.png"
 
 const personData = {
   about: {
@@ -119,10 +122,31 @@ const personData = {
     },
     {
       title: "Pizza Form",
-      technologies: ["HTML5, CSS3, Bootstrap, Php, Docker"],
-      about: `Submit-order, Register-address, Switch between links`,
+      technologies: ["HTML5, CSS3, Bootstrap, Php, Docker, Heroku"],
+      about: `Submit-order, Register-address, Switch between Pages`,
       image: pizza_form,
       url: `https://php-form-pizza.herokuapp.com/src/index.php`,
+    },
+    {
+      title: "Weather App",
+      technologies: ["HTML5, CSS3, Bootstrap, JavaScript, Reactjs, Netlify"],
+      about: `Motor Search, Api, Refresh button`,
+      image: weatherapp,
+      url: `https://find-my-weather.netlify.app/`,
+    },
+    {
+      title: "Copgip Company",
+      technologies: ["HTML5, CSS3, Bootstrap, Php, Docker, MVC, MYSQL, Heroku"],
+      about: `Submit-order, Register-address, Switch between Pages, CRUD, Delete, Create,`,
+      image: cogip,
+      url: `https://cogip-project.herokuapp.com/src/index.php`,
+    },
+    {
+      title: "Pomodoro",
+      technologies: ["HTML5, CSS3, Bootstrap, Reactjs, JavaScript, Netlify, github"],
+      about: `Momentjs, NPM, React Hooks`,
+      image: pomodoro,
+      url: `https://tselawi.github.io/react-pomodoro/`,
     },
   ],
 };

@@ -4,11 +4,6 @@ import Person from "../assets/PersonalData";
 const Skills = () => {
   return (
     <div>
-      <img
-        src={Person.about.skillbg}
-        alt="bluebackground"
-        className="image-skill"
-      />
       <div className="container-fluid padding" id="skills">
         <div className="row headers text-center padding">
           <div className="col-md-12">
@@ -17,9 +12,9 @@ const Skills = () => {
           <hr />
         </div>
       </div>
-      <div className="row text-center text-white padding">
-        <div className=" col-xs-10 col-sm-6 col-md-2"></div>
-        <div className="row col-xs-12 col-sm-12 col-md-10 d-flex justify-content-end">
+      <div className="row text-center">
+        <div className=" col-xs-10 col-sm-6 col-md-1"></div>
+        <div className="row col-xs-12 col-sm-12 col-md-10 d-flex justify-content-center">
           {Person.skills.map((skill, index) => {
             return (
               <div
