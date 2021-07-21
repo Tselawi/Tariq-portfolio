@@ -122,11 +122,11 @@ const personData = {
       url: `https://tselawi.github.io/modern-js-application/`,
     },
     {
-      title: "Mcdonald App",
+      title: "Mcdonald App (Responsive only with mobile size)",
       technologies: ["ReactJS, ReduxJS, HTML5, CSS3, Bootstrap, Netlify"],
       about: `Router, Redux to store data, Switch between Pages, Display the details of products`,
       image: MacApp,
-      url: `https://php-form-pizza.herokuapp.com/src/index.php`,
+      url: `https://ta-mcdonaldapp.netlify.app/`,
     },
     {
       title: "Weather App",
