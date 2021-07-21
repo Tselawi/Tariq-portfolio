@@ -5,10 +5,10 @@ import bg2 from "./images/a-c.jpg";
 import profilepic from "./images/profilepic.jpeg";
 import skillbg from "./images/p-1.jpg";
 import charatermanager from "./images/charatermanager.png";
-import pizza_form from "./images/pizzaform.png";
+import MacApp from "./images/Mac-app.png";
 import weatherapp from "./images/weatherapp.png";
 import cogip from "./images/cogip.png";
-import pomodoro from "./images/pomodoro.png"
+import pomodoro from "./images/pomodoro.png";
 
 const personData = {
   about: {
@@ -86,18 +86,19 @@ const personData = {
         `JavaScript`,
         `React`,
         `React-native`,
-        `Bootstrap 4`,
+        `Bootstrap`,
+        `wordpress`,
       ],
       icon: `fas fa-laptop-code`,
     },
     {
       name: `Backend`,
-      language: [`Docker`, `Php`],
+      language: [`Docker`, `Php`, `laravel`, `NodeJs`],
       icon: `fas fa-code`,
     },
     {
       name: `Database`,
-      language: [`Phpmyadmin`, `MYSQL`],
+      language: [`Phpmyadmin`, `MYSQL`, `MongoDB`],
       icon: `fas fa-database`,
     },
     {
@@ -121,10 +122,10 @@ const personData = {
       url: `https://tselawi.github.io/modern-js-application/`,
     },
     {
-      title: "Pizza Form",
-      technologies: ["HTML5, CSS3, Bootstrap, Php, Docker, Heroku"],
-      about: `Submit-order, Register-address, Switch between Pages`,
-      image: pizza_form,
+      title: "Mcdonald App",
+      technologies: ["ReactJS, ReduxJS, HTML5, CSS3, Bootstrap, Netlify"],
+      about: `Router, Redux to store data, Switch between Pages, Display the details of products`,
+      image: MacApp,
       url: `https://php-form-pizza.herokuapp.com/src/index.php`,
     },
     {
@@ -143,7 +144,9 @@ const personData = {
     },
     {
       title: "Pomodoro",
-      technologies: ["HTML5, CSS3, Bootstrap, Reactjs, JavaScript, Netlify, github"],
+      technologies: [
+        "HTML5, CSS3, Bootstrap, Reactjs, JavaScript, Netlify, github",
+      ],
       about: `Momentjs, NPM, React Hooks`,
       image: pomodoro,
       url: `https://tselawi.github.io/react-pomodoro/`,
