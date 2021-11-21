@@ -5,7 +5,7 @@ import { useForm } from "react-hook-form";
 const Contact = () => {
   const [message, setMessage] = useState("");
   const { register, handleSubmit, reset } = useForm();
-  const onSubmit = async (data: FormData, e) => {
+  const onSubmit = async (data, e) => {
     e.preventDefault();
     console.log(data);
     setMessage(`Thank you ${data.name} for your message`);
@@ -48,7 +48,7 @@ const Contact = () => {
           <div className={message ? "alert alert-success" : ""}>{message}</div>
           <form
             onSubmit={handleSubmit(onSubmit)}
-            action="https://formsubmit.co/tariq.che@icloud.com"
+            action="https://formsubmit.co/selawi.be@gmail.com"
             method="post"
           >
             <input type="hidden" name="_captcha" value="false" />
