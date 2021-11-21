@@ -8,7 +8,7 @@ const Contact = () => {
   const onSubmit = async (data, e) => {
     e.preventDefault();
     console.log(data);
-    setMessage(`Thank you ${data.name} for your message`);
+    setMessage(`Thank you ${data.name} for your message 😊`);
     reset();
   };
 
@@ -56,6 +56,7 @@ const Contact = () => {
             <div className="form-group">
               <input
                 type="text"
+                name="name"
                 {...register("name", { required: true, maxLength: 40 })}
                 placeholder="Your Name"
                 className="form-control"
@@ -74,7 +75,7 @@ const Contact = () => {
             <div className="form-group">
               <textarea
                 className="form-control"
-                {...register("message", { required: true })}
+                name="message"
                 placeholder="Your Message"
                 rows="6"
                 required
