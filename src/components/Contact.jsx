@@ -65,7 +65,7 @@ const Contact = () => {
             <div className="form-group">
               <input
                 type="email"
-                {...register("email", { required: true })}
+                name="email"
                 placeholder="Your Email"
                 className="form-control"
                 required
