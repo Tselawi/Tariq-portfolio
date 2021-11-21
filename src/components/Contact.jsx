@@ -7,8 +7,8 @@ const Contact = () => {
   const { register, handleSubmit, reset } = useForm();
   const onSubmit = async (data: FormData, e) => {
     e.preventDefault();
-    console.log(data.name);
-    setMessage(`thank you ${data.name} for your message`);
+    console.log(data);
+    setMessage(`Thank you ${data.name} for your message`);
     reset();
   };
 
