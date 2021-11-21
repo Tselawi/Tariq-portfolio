@@ -7,8 +7,8 @@ const Contact = () => {
 
   const { register, handleSubmit, reset } = useForm();
   const onSubmit = async (data) => {
-    console.log(data.name);
-    setMessage(`Thank you ${data.name} for your message 😊`);
+    console.log(data.names);
+    setMessage(`Thank you ${data.names} for your message 😊`);
     reset();
   };
 
@@ -62,7 +62,7 @@ const Contact = () => {
               <input
                 type="text"
                 name="name"
-                {...register("name", { required: true, maxLength: 40 })}
+                {...register("names", { required: true, maxLength: 40 })}
                 placeholder="Your Name"
                 className="form-control"
                 required
