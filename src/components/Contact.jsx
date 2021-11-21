@@ -42,7 +42,7 @@ const Contact = () => {
             <input
               type="hidden"
               name="_next"
-              value="https://tariqs-portfolio.netlify.app/thanks.html"
+              value="https://tariqs-portfolio.netlify.app/public/thanks.html"
             />
             <input type="hidden" name="_captcha" value="false" />
             <input type="hidden" name="form-name" value="contact" />
