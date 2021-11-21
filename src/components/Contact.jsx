@@ -5,10 +5,10 @@ import { useForm } from "react-hook-form";
 const Contact = () => {
   const [message, setMessage] = useState("");
 
-  const { register, handleSubmit, reset } = useForm();
-  const onSubmit = async (data) => {
-    console.log(data.names);
-    setMessage(`Thank you ${data.names} for your message 😊`);
+  const { handleSubmit, reset } = useForm();
+  const onSubmit = async () => {
+    // console.log(data.names);
+    setMessage(`Thank you for your message 😊`);
     reset();
   };
 
@@ -62,7 +62,7 @@ const Contact = () => {
               <input
                 type="text"
                 name="name"
-                {...register("names", { required: true, maxLength: 40 })}
+                // {...register("names", { required: true, maxLength: 40 })}
                 placeholder="Your Name"
                 className="form-control"
                 required
