@@ -49,14 +49,14 @@ const Contact = () => {
           <form
             onSubmit={handleSubmit(onSubmit)}
             action="https://formsubmit.co/selawi.be@gmail.com"
-            method="post"
+            method="POST"
           >
             <input type="hidden" name="_captcha" value="false" />
             <input type="hidden" name="form-name" value="contact" />
             <div className="form-group">
               <input
                 type="text"
-                {...register("name", { required: true, maxLength: 30 })}
+                {...register("name", { required: true, maxLength: 40 })}
                 placeholder="Your Name"
                 className="form-control"
                 required
