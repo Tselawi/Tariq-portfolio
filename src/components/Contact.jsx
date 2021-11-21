@@ -7,7 +7,7 @@ const Contact = () => {
   const { register, handleSubmit, reset } = useForm();
   const onSubmit = async (data, e) => {
     e.preventDefault();
-    console.log(data);
+    console.log(data.names);
     setMessage(`Thank you ${data.names} for your message 😊`);
     reset();
   };
@@ -45,7 +45,7 @@ const Contact = () => {
         </div>
         <div className=" text-center p-5 col-sm-12 col-md-6 col-lg-6">
           <h2 className="pb-2">I'm Ready Let's Talk</h2>
-          <div className={message ? "alert alert-success" : ""}>{message}</div>
+          {/* <div className={message ? "alert alert-success" : ""}>{message}</div> */}
           <form
             onSubmit={handleSubmit(onSubmit)}
             action="https://formsubmit.co/tariq.che@icloud.com"
