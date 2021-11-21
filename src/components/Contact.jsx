@@ -53,7 +53,6 @@ const Contact = () => {
           >
             <input type="hidden" name="_captcha" value="false" />
             <input type="hidden" name="form-name" value="contact" />
-            <input type="hidden" name="_template" value="table" />
             <div className="form-group">
               <input
                 type="text"
