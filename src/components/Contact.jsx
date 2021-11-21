@@ -5,9 +5,9 @@ import { useForm } from "react-hook-form";
 const Contact = () => {
   const [message, setMessage] = useState("");
   const { handleSubmit, reset } = useForm();
-  const onSubmit = async (e) => {
-    e.preventDefault();
-    //console.log(data);
+  const onSubmit = async (data) => {
+    // e.preventDefault();
+    console.log(data);
     setMessage(`Thank you for your message 😊`);
     reset();
   };
