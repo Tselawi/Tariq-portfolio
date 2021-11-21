@@ -35,7 +35,16 @@ const Contact = () => {
         </div>
         <div className=" text-center p-5 col-sm-12 col-md-6 col-lg-6">
           <h2 className="pb-2">I'm Ready Let's Talk</h2>
-          <form name="contact" method="post">
+          <form
+            action="https://formsubmit.co/selawi.be@gmail.com"
+            method="post"
+          >
+            <input
+              type="hidden"
+              name="_next"
+              value="https://tariqs-portfolio.netlify.app/thanks.html"
+            />
+            <input type="hidden" name="_captcha" value="false" />
             <input type="hidden" name="form-name" value="contact" />
             <div className="form-group">
               <input
