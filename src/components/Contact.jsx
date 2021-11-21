@@ -1,7 +1,17 @@
-import React from "react";
+import React, { useState } from "react";
 import Person from "../assets/PersonalData";
+import { useForm } from "react-hook-form";
 
 const Contact = () => {
+  const [message, setMessage] = useState("");
+  const { register, handleSubmit, reset } = useForm();
+  const onSubmit = async (data: FormData, e) => {
+    e.preventDefault();
+    console.log(data.name);
+    setMessage(`thank you ${data.name} for your message`);
+    reset();
+  };
+
   return (
     <div id="contact" className="container-fluid padding" bg="dark">
       <div className="row headers text-center padding">
@@ -35,21 +45,19 @@ const Contact = () => {
         </div>
         <div className=" text-center p-5 col-sm-12 col-md-6 col-lg-6">
           <h2 className="pb-2">I'm Ready Let's Talk</h2>
+          <div className={message ? "alert alert-success" : ""}>{message}</div>
           <form
+            onSubmit={handleSubmit(onSubmit)}
             action="https://formsubmit.co/selawi.be@gmail.com"
             method="post"
           >
-            <input
-              type="hidden"
-              name="_next"
-              value="https://tariqs-portfolio.netlify.app/public/thanks.html"
-            />
+            <input type="hidden" name="_template" value="table" />
             <input type="hidden" name="_captcha" value="false" />
             <input type="hidden" name="form-name" value="contact" />
             <div className="form-group">
               <input
                 type="text"
-                name="name"
+                {...register("name", { required: true, maxLength: 30 })}
                 placeholder="Your Name"
                 className="form-control"
                 required
@@ -58,7 +66,7 @@ const Contact = () => {
             <div className="form-group">
               <input
                 type="email"
-                name="email"
+                {...register("email", { required: true })}
                 placeholder="Your Email"
                 className="form-control"
                 required
@@ -67,7 +75,7 @@ const Contact = () => {
             <div className="form-group">
               <textarea
                 className="form-control"
-                name="message"
+                {...register("message", { required: true })}
                 placeholder="Your Message"
                 rows="6"
                 required
