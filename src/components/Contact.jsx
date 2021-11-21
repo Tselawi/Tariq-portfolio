@@ -50,10 +50,14 @@ const Contact = () => {
           <form
             method="POST"
             action="https://formsubmit.co/selawi.be@gmail.com"
-            onSubmit={handleSubmit(onSubmit)}
           >
-            <input type="hidden" name="_captcha" value="true" />
+            <input type="hidden" name="_captcha" value="false" />
             <input type="hidden" name="_template" value="table" />
+            <input
+              type="hidden"
+              name="_next"
+              value="https://tariqs-portfolio.netlify.app/"
+            ></input>
             <div className="form-group">
               <input
                 type="text"
@@ -82,7 +86,11 @@ const Contact = () => {
                 required
               ></textarea>
             </div>
-            <button type="submit" className="btn btn-outline-primary btn-lg">
+            <button
+              type="submit"
+              onClick={() => handleSubmit(onSubmit)}
+              className="btn btn-outline-primary btn-lg"
+            >
               Send Message
             </button>
           </form>
