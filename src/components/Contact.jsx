@@ -57,7 +57,7 @@ const Contact = () => {
               type="hidden"
               name="_next"
               value="https://tariqs-portfolio.netlify.app/"
-            ></input>
+            />
             <div className="form-group">
               <input
                 type="text"
