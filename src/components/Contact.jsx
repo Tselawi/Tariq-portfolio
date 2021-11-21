@@ -4,11 +4,11 @@ import { useForm } from "react-hook-form";
 
 const Contact = () => {
   const [message, setMessage] = useState("");
-  const { register, handleSubmit, reset } = useForm();
+  const { handleSubmit, reset } = useForm();
   const onSubmit = async (data, e) => {
     e.preventDefault();
     console.log(data.names);
-    setMessage(`Thank you ${data.names} for your message 😊`);
+    setMessage(`Thank you for your message 😊`);
     reset();
   };
 
@@ -45,8 +45,7 @@ const Contact = () => {
         </div>
         <div className=" text-center p-5 col-sm-12 col-md-6 col-lg-6">
           <h2 className="pb-2">I'm Ready Let's Talk</h2>
-          {/* <div className={message ? "alert alert-success" : ""}>{message}</div> */}
-          {message}
+          <div className={message ? "alert alert-success" : ""}>{message}</div>
           <form
             onSubmit={handleSubmit(onSubmit)}
             action="https://formsubmit.co/tariq.che@icloud.com"
@@ -58,7 +57,7 @@ const Contact = () => {
               <input
                 type="text"
                 name="name"
-                {...register("names", { required: true, maxLength: 40 })}
+                // {...register("names", { required: true, maxLength: 40 })}
                 placeholder="Your Name"
                 className="form-control"
                 required
