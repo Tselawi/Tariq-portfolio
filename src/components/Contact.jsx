@@ -48,7 +48,7 @@ const Contact = () => {
           <div className={message ? "alert alert-success" : ""}>{message}</div>
           <form
             onSubmit={handleSubmit(onSubmit)}
-            action="https://formsubmit.co/selawi.be@gmail.com"
+            action="https://formsubmit.co/tariq.che@icloud.com"
             method="post"
           >
             <input type="hidden" name="_captcha" value="false" />
