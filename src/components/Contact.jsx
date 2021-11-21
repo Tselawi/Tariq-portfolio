@@ -46,6 +46,7 @@ const Contact = () => {
         <div className=" text-center p-5 col-sm-12 col-md-6 col-lg-6">
           <h2 className="pb-2">I'm Ready Let's Talk</h2>
           {/* <div className={message ? "alert alert-success" : ""}>{message}</div> */}
+          {message}
           <form
             onSubmit={handleSubmit(onSubmit)}
             action="https://formsubmit.co/tariq.che@icloud.com"
