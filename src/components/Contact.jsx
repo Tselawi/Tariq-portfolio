@@ -51,7 +51,7 @@ const Contact = () => {
             method="POST"
             action="https://formsubmit.co/selawi.be@gmail.com"
           >
-            <input type="hidden" name="_captcha" value="false" />
+            <input type="hidden" name="_captcha" value="true" />
             <input type="hidden" name="_template" value="table" />
             <div className="form-group">
               <input
