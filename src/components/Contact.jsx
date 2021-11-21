@@ -6,7 +6,7 @@ const Contact = () => {
   const [message, setMessage] = useState("");
 
   const { handleSubmit, reset } = useForm();
-  const onSubmit = async () => {
+  const onSubmit = () => {
     // console.log(data.names);
     setMessage(`Thank you for your message 😊`);
     reset();
@@ -47,7 +47,6 @@ const Contact = () => {
           <h2 className="pb-2">I'm Ready Let's Talk</h2>
           <div className={message ? "alert alert-success" : ""}>{message}</div>
           <form
-            onSubmit={handleSubmit(onSubmit)}
             method="POST"
             action="https://formsubmit.co/selawi.be@gmail.com"
           >
@@ -86,7 +85,11 @@ const Contact = () => {
                 required
               ></textarea>
             </div>
-            <button type="submit" className="btn btn-outline-primary btn-lg">
+            <button
+              onClick={handleSubmit(onSubmit)}
+              type="submit"
+              className="btn btn-outline-primary btn-lg"
+            >
               Send Message
             </button>
           </form>
