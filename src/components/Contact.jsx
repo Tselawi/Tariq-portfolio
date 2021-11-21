@@ -61,6 +61,7 @@ const Contact = () => {
             <div className="form-group">
               <input
                 type="text"
+                name="name"
                 {...register("name", { required: true, maxLength: 40 })}
                 placeholder="Your Name"
                 className="form-control"
